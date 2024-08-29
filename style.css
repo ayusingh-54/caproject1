@@ -1,0 +1,157 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Added a modern font */
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #4CAF50; /* Changed to a green theme */
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #388E3C; /* Hover color */
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(120deg, #4CAF50, #81C784); /* Gradient background */
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.intro p {
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Content Sections (Achievements & Projects) */
+section {
+    max-width: 1000px;
+    margin: 0 auto 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #4CAF50;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin: 20px 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+section ul li:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+}
+
+section ul li strong {
+    display: block;
+    font-size: 1.5rem;
+    color: #388E3C;
+}
+
+section ul li a {
+    color: #388E3C;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+section ul li a:hover {
+    color: #1B5E20; /* Darker hover effect for links */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro p {
+        font-size: 1.1rem;
+    }
+
+    section ul li {
+        padding: 15px;
+    }
+}
